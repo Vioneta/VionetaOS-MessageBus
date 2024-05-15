@@ -1,8 +1,8 @@
 package in
 
 import (
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/Vioneta/VionetaOS-MessageBus/codegen"
+	"github.com/Vioneta/VionetaOS-MessageBus/model"
 )
 
 func ActionTypeAdapter(actionType codegen.ActionType) model.ActionType {

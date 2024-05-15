@@ -4,7 +4,7 @@ import (
 	"context"
 	"errors"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
+	"github.com/Vioneta/VionetaOS-MessageBus/repository"
 )
 
 type Services struct {

@@ -3,9 +3,9 @@ package out
 import (
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/codegen"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/Vioneta/VionetaOS-Common/utils"
+	"github.com/Vioneta/VionetaOS-MessageBus/codegen"
+	"github.com/Vioneta/VionetaOS-MessageBus/model"
 )
 
 func EventAdapter(event model.Event) codegen.Event {

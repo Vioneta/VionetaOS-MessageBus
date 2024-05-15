@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/logger"
+	"github.com/Vioneta/VionetaOS-Common/utils/logger"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/Vioneta/VionetaOS-MessageBus/common"
+	"github.com/Vioneta/VionetaOS-MessageBus/model"
 	"go.uber.org/zap"
 )
 

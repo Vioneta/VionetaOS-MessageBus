@@ -12,71 +12,71 @@ info:
 
     CasaOS Message Bus accepts events and actions from various sources and delivers them to subscribers.
 
-    For issues and discussions, please visit the [GitHub repository](https://github.com/IceWhaleTech/CasaOS) or join [our Discord](https://discord.gg/knqAbbBbeX).
+    For issues and discussions, please visit the [GitHub repository](https://github.com/Vioneta/VionetaOS) or join [our Discord](https://discord.gg/knqAbbBbeX).
 
 servers:
-  - url: /v2/message_bus
+- url: /v2/message_bus
 
 tags:
-  - name: Event methods
-    description: |-
-      methods for managing event types, as well as publishing and subscribing to events
+- name: Event methods
+  description: |-
+    methods for managing event types, as well as publishing and subscribing to events
 
-  - name: Action methods
-    description: |-
-      methods for managing action types, as well as publishing and subscribing to actions
+- name: Action methods
+  description: |-
+    methods for managing action types, as well as publishing and subscribing to actions
 
-  - name: Websocket Endpoints
-    description: |-
-      Endpoint paths for subscribing to events and actions via WebSocket
+- name: Websocket Endpoints
+  description: |-
+    Endpoint paths for subscribing to events and actions via WebSocket
 
-  - name: SocketIO Endpoints
-    description: |-
-      Endpoint paths for subscribing to events and actions via SocketIO
+- name: SocketIO Endpoints
+  description: |-
+    Endpoint paths for subscribing to events and actions via SocketIO
 
-  - name: EventType
-    description: |-
-      <SchemaDefinition schemaRef="#/components/schemas/EventType" />
+- name: EventType
+  description: |-
+    <SchemaDefinition schemaRef="#/components/schemas/EventType" />
 
-  - name: Event
-    description: |-
-      <SchemaDefinition schemaRef="#/components/schemas/Event" />
+- name: Event
+  description: |-
+    <SchemaDefinition schemaRef="#/components/schemas/Event" />
 
-  - name: ActionType
-    description: |-
-      <SchemaDefinition schemaRef="#/components/schemas/ActionType" />
+- name: ActionType
+  description: |-
+    <SchemaDefinition schemaRef="#/components/schemas/ActionType" />
 
-  - name: Action
-    description: |-
-      <SchemaDefinition schemaRef="#/components/schemas/Action" />
+- name: Action
+  description: |-
+    <SchemaDefinition schemaRef="#/components/schemas/Action" />
 
-  - name: PropertyType
-    description: |-
-      <SchemaDefinition schemaRef="#/components/schemas/PropertyType" />
+- name: PropertyType
+  description: |-
+    <SchemaDefinition schemaRef="#/components/schemas/PropertyType" />
 
 x-tagGroups:
-  - name: Methods
-    tags:
-      - EventType methods
-      - Event methods
-      - ActionType methods
-      - Action methods
+- name: Methods
+  tags:
+  - EventType methods
+  - Event methods
+  - ActionType methods
+  - Action methods
 
-  - name: Endpoints
-    tags:
-      - WebSocket Endpoints
-      - SocketIO Endpoints
+- name: Endpoints
+  tags:
+  - WebSocket Endpoints
+  - SocketIO Endpoints
 
-  - name: Schemas
-    tags:
-      - EventType
-      - Event
-      - ActionType
-      - Action
-      - PropertyType
+- name: Schemas
+  tags:
+  - EventType
+  - Event
+  - ActionType
+  - Action
+  - PropertyType
 
 security:
-  - access_token: []
+- access_token: []
 
 paths:
   /event_type:
@@ -86,7 +86,7 @@ paths:
         List all event types that are currently registered with the message bus.
       operationId: getEventTypes
       tags:
-        - EventType methods
+      - EventType methods
       responses:
         "200":
           $ref: "#/components/responses/GetEventTypesOK"
@@ -99,7 +99,7 @@ paths:
         Register one or more new event types with the message bus.
       operationId: RegisterEventTypes
       tags:
-        - EventType methods
+      - EventType methods
       requestBody:
         $ref: "#/components/requestBodies/RegisterEventTypes"
       responses:
@@ -117,9 +117,9 @@ paths:
         Get all event types that are registered with the message bus for a specific source ID.
       operationId: getEventTypesBySourceID
       tags:
-        - EventType methods
+      - EventType methods
       parameters:
-        - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/SourceID"
       responses:
         "200":
           $ref: "#/components/responses/GetEventTypesOK"
@@ -133,10 +133,10 @@ paths:
         Get an event type that is registered with the message bus for a specific source ID and event name.
       operationId: getEventType
       tags:
-        - EventType methods
+      - EventType methods
       parameters:
-        - $ref: "#/components/parameters/SourceID"
-        - $ref: "#/components/parameters/EventName"
+      - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/EventName"
       responses:
         "200":
           $ref: "#/components/responses/GetEventTypeOK"
@@ -150,10 +150,10 @@ paths:
         Publish an event to the message bus.
       operationId: publishEvent
       tags:
-        - Event methods
+      - Event methods
       parameters:
-        - $ref: "#/components/parameters/SourceID"
-        - $ref: "#/components/parameters/EventName"
+      - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/EventName"
       requestBody:
         $ref: "#/components/requestBodies/PublishEvent"
       responses:
@@ -173,10 +173,10 @@ paths:
         > `names` can be specified in the query string to subscribe to specific event types.
       operationId: subscribeEventWS
       tags:
-        - WebSocket Endpoints
+      - WebSocket Endpoints
       parameters:
-        - $ref: "#/components/parameters/SourceID"
-        - $ref: "#/components/parameters/EventNames"
+      - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/EventNames"
       responses:
         "101":
           description: |
@@ -189,7 +189,7 @@ paths:
         List all action types that are currently registered with the message bus.
       operationId: getActionTypes
       tags:
-        - ActionType methods
+      - ActionType methods
       responses:
         "200":
           $ref: "#/components/responses/GetActionTypesOK"
@@ -200,7 +200,7 @@ paths:
         Register one or more new action types with the message bus.
       operationId: RegisterActionTypes
       tags:
-        - ActionType methods
+      - ActionType methods
       requestBody:
         $ref: "#/components/requestBodies/RegisterActionTypes"
       responses:
@@ -218,9 +218,9 @@ paths:
         Get all action types that are registered with the message bus for a specific source ID.
       operationId: getActionTypesBySourceID
       tags:
-        - ActionType methods
+      - ActionType methods
       parameters:
-        - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/SourceID"
       responses:
         "200":
           $ref: "#/components/responses/GetActionTypesOK"
@@ -234,10 +234,10 @@ paths:
         Get an action type that is registered with the message bus for a specific source ID and action name.
       operationId: getActionType
       tags:
-        - ActionType methods
+      - ActionType methods
       parameters:
-        - $ref: "#/components/parameters/SourceID"
-        - $ref: "#/components/parameters/ActionName"
+      - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/ActionName"
       responses:
         "200":
           $ref: "#/components/responses/GetActionTypeOK"
@@ -251,10 +251,10 @@ paths:
         Trigger an action on the message bus.
       operationId: triggerAction
       tags:
-        - Action methods
+      - Action methods
       parameters:
-        - $ref: "#/components/parameters/SourceID"
-        - $ref: "#/components/parameters/ActionName"
+      - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/ActionName"
       requestBody:
         $ref: "#/components/requestBodies/TriggerAction"
       responses:
@@ -274,10 +274,10 @@ paths:
         > `names` can be specified in the query string to subscribe to specific action types.
       operationId: subscribeActionWS
       tags:
-        - WebSocket Endpoints
+      - WebSocket Endpoints
       parameters:
-        - $ref: "#/components/parameters/SourceID"
-        - $ref: "#/components/parameters/ActionNames"
+      - $ref: "#/components/parameters/SourceID"
+      - $ref: "#/components/parameters/ActionNames"
       responses:
         "101":
           description: |
@@ -293,7 +293,7 @@ paths:
 
       operationId: subscribeSIO
       tags:
-        - SocketIO Endpoints
+      - SocketIO Endpoints
       responses:
         "101":
           description: |
@@ -308,7 +308,7 @@ paths:
         Poll events and actions by via SocketIO.
       operationId: pollSIO
       tags:
-        - SocketIO Endpoints
+      - SocketIO Endpoints
       responses:
         "200":
           description: |
@@ -541,7 +541,7 @@ components:
     PropertyType:
       type: object
       required:
-        - "name"
+      - "name"
       properties:
         name:
           type: string
@@ -564,9 +564,9 @@ components:
     EventType:
       type: object
       required:
-        - "sourceID"
-        - "name"
-        - "propertyTypeList"
+      - "sourceID"
+      - "name"
+      - "propertyTypeList"
       properties:
         sourceID:
           type: string
@@ -587,9 +587,9 @@ components:
     Event:
       type: object
       required:
-        - "sourceID"
-        - "name"
-        - "properties"
+      - "sourceID"
+      - "name"
+      - "properties"
       properties:
         sourceID:
           type: string
@@ -620,9 +620,9 @@ components:
     ActionType:
       type: object
       required:
-        - "sourceID"
-        - "name"
-        - "propertyTypeList"
+      - "sourceID"
+      - "name"
+      - "propertyTypeList"
       properties:
         sourceID:
           type: string
@@ -643,9 +643,9 @@ components:
     Action:
       type: object
       required:
-        - "sourceID"
-        - "name"
-        - "properties"
+      - "sourceID"
+      - "name"
+      - "properties"
       properties:
         sourceID:
           type: string

@@ -1,9 +1,9 @@
-module github.com/IceWhaleTech/CasaOS-MessageBus
+module github.com/Vioneta/VionetaOS-MessageBus
 
 go 1.20
 
 require (
-	github.com/IceWhaleTech/CasaOS-Common v0.4.4-alpha2
+	github.com/Vioneta/VionetaOS-Common v0.4.4-alpha2
 	github.com/glebarez/sqlite v1.7.0
 	github.com/gobwas/ws v1.1.0
 	github.com/json-iterator/go v1.1.12

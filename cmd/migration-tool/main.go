@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	interfaces "github.com/IceWhaleTech/CasaOS-Common"
-	"github.com/IceWhaleTech/CasaOS-Common/utils/systemctl"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
+	interfaces "github.com/Vioneta/VionetaOS-Common"
+	"github.com/Vioneta/VionetaOS-Common/utils/systemctl"
+	"github.com/Vioneta/VionetaOS-MessageBus/common"
 )
 
 const (

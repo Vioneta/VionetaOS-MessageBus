@@ -3,7 +3,7 @@ package repository
 import (
 	"time"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/Vioneta/VionetaOS-MessageBus/model"
 	"github.com/glebarez/sqlite"
 	"gorm.io/gorm"
 	"gorm.io/gorm/clause"

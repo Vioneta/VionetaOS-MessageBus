@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/repository"
+	"github.com/Vioneta/VionetaOS-MessageBus/model"
+	"github.com/Vioneta/VionetaOS-MessageBus/repository"
 	"go.uber.org/goleak"
 	"gotest.tools/assert"
 )

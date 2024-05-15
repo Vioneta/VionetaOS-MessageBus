@@ -5,9 +5,9 @@ import (
 	"log"
 	"os"
 
-	"github.com/IceWhaleTech/CasaOS-Common/utils/constants"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/common"
-	"github.com/IceWhaleTech/CasaOS-MessageBus/model"
+	"github.com/Vioneta/VionetaOS-Common/utils/constants"
+	"github.com/Vioneta/VionetaOS-MessageBus/common"
+	"github.com/Vioneta/VionetaOS-MessageBus/model"
 	"gopkg.in/ini.v1"
 )
 

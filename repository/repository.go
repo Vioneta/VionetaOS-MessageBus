@@ -1,6 +1,6 @@
 package repository
 
-import "github.com/IceWhaleTech/CasaOS-MessageBus/model"
+import "github.com/Vioneta/VionetaOS-MessageBus/model"
 
 type Repository interface {
 	GetEventTypes() ([]model.EventType, error)
