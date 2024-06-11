@@ -1,0 +1,13 @@
+[Unit]
+After=vionetaos-gateway.service
+Description=VionetaOS Message Bus Service
+
+[Service]
+ExecStartPre=/usr/bin/vionetaos-message-bus -v
+ExecStart=/usr/bin/vionetaos-message-bus -c /etc/vionetaos/message-bus.conf
+PIDFile=/var/run/vionetaos/message-bus.pid
+Restart=always
+Type=notify
+
+[Install]
+WantedBy=multi-user.target

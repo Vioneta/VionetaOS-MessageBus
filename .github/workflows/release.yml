@@ -8,11 +8,10 @@ permissions:
   contents: write
 jobs:
   call-workflow-passing-data:
-    uses: IceWhaleTech/github/.github/workflows/go_release.yml@main
+    uses: Vioneta/github/.github/workflows/go_release.yml@main
     with:
-      project-name: CasaOS-MessageBus
-      file-name: casaos-message-bus
+      project-name: VionetaOS-MessageBus
+      file-name: vionetaos-message-bus
     secrets:
       OSS_KEY_ID: ${{ secrets.OSS_KEY_ID }}
       OSS_KEY_SECRET: ${{ secrets.OSS_KEY_SECRET }}
-

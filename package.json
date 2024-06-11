@@ -1,5 +1,5 @@
 {
-  "name": "casaos-messagebus-openapi",
+  "name": "vionetaos-messagebus-openapi",
   "version": "0.0.1",
   "scripts": {
     "build": "rm -rf dist && tsc && rm -rf generate",
@@ -11,9 +11,9 @@
   "homepage": "https://github.com/Vioneta/VionetaOS-MessageBus#readme",
   "description": "Casaos-MessageBus Typescript+Axios SDK",
   "keywords": [
-    "CasaOS-MessageBus",
+    "VionetaOS-MessageBus",
     "SDK",
-    "CasaOS-MessageBus Axios"
+    "VionetaOS-MessageBus Axios"
   ],
   "main": "dist/index",
   "files": [
@@ -30,6 +30,6 @@
     "openapi-typescript-codegen": "^0.23.0",
     "typescript": "^4.9.5"
   },
-  "author": "casaos",
+  "author": "vionetaos",
   "license": "Apache-2.0"
 }

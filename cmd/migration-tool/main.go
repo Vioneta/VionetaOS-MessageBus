@@ -12,13 +12,13 @@ import (
 )
 
 const (
-	messageBusConfigDirPath  = "/etc/casaos"
-	messageBusConfigFilePath = "/etc/casaos/message-bus.conf"
-	messageBusName           = "casaos-message-bus.service"
+	messageBusConfigDirPath  = "/etc/vionetaos"
+	messageBusConfigFilePath = "/etc/vionetaos/message-bus.conf"
+	messageBusName           = "vionetaos-message-bus.service"
 	messageBusNameShort      = "message-bus"
 )
 
-//go:embedded ../../build/sysroot/etc/casaos/message-bus.conf.sample
+//go:embedded ../../build/sysroot/etc/vionetaos/message-bus.conf.sample
 // var _messageBusConfigFileSample string
 
 var (
